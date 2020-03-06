@@ -9,15 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-provider-payment8001</artifactId>
-    <description>支付模块</description>
+    <artifactId>cloud-provider-payment8002</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-      <!--  &lt;!&ndash;eureka client-->
+        <!--  &lt;!&ndash;eureka client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
@@ -70,5 +69,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>

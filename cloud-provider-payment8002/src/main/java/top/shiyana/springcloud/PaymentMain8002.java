@@ -7,17 +7,17 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 /**
  * @ProjectName: cloud2020
  * @Package: top.shiyana.springcloud
- * @ClassName: OrderMain80
+ * @ClassName: PaymentMain8001
  * @Author: DANGEROUS
  * @Description:
- * @Date: 2020/3/6 12:35
+ * @Date: 2020/3/6 10:57
  * @Version: 1.0
  */
 @SpringBootApplication
 @EnableEurekaClient
-public class OrderMain80 {
-
+public class PaymentMain8002
+{
     public static void main(String[] args) {
-        SpringApplication.run(OrderMain80.class,args);
+        SpringApplication.run(PaymentMain8002.class,args);
     }
 }

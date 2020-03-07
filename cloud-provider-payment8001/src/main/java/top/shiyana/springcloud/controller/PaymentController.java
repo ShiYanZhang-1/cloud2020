@@ -12,6 +12,7 @@ import top.shiyana.springcloud.service.PaymentService;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @ProjectName: cloud2020
@@ -69,6 +70,17 @@ public class PaymentController {
             log.info(instance.getInstanceId()+"????"+instance.getHost()+"主机"+instance.getPort()+"端口"+instance.getUri());
         }
         return this.discoveryClient;
+    }
+
+    @GetMapping(value = "/payment/feign/timeout")
+    public String paymentFeignTimeout() {
+        try {
+            // 暂停3秒钟
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return serverPort;
     }
 
 }
